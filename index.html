@@ -4,61 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carbon Emission Visuliazton</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
 </head>
 <body>
-    <form id="carbon-footprint-quiz">
+    <script src="main.js"></script>
+    <div id="form">
         <h3>Transportation</h3>
         <label>How often do you use a car for commuting?</label><br>
-        <input type="radio" name="car-commuting" value="daily"> Daily<br>
-        <input type="radio" name="car-commuting" value="weekly"> Weekly<br>
-        <input type="radio" name="car-commuting" value="monthly"> Monthly<br>
-        <input type="radio" name="car-commuting" value="rarely"> Rarely<br>
+        <input type="radio" name="car-commuting" value="10"> Daily<br>
+        <input type="radio" name="car-commuting" value="5"> Weekly<br>
+        <input type="radio" name="car-commuting" value="2"> Monthly<br>
+        <input type="radio" name="car-commuting" value="1"> Rarely<br>
       
-
         <label>How often do you use a car for commuting?</label><br>
-        <input type="radio" name="car-type" value="electric"> Electric<br>
-        <input type="radio" name="car-type" value="hybrid"> Hybrid<br>
-        <input type="radio" name="car-type" value="gas"> Gas<br>
-        <input type="radio" name="car-type" value="diesel"> Diesel<br>
+        <input type="radio" name="car-type" value="2"> Electric<br>
+        <input type="radio" name="car-type" value="4"> Hybrid<br>
+        <input type="radio" name="car-type" value="8"> Gas<br>
+        <input type="radio" name="car-type" value="10"> Diesel<br>
 
-        <label>How many miles do you drive the car</label>
-        <input type="radio" name="miles" value="0-50"> Less than 50<br>
-        <input type="radio" name="miles" value="50-100"> 50-100<br>
-        <input type="radio" name="miles" value="100-200"> 100-200<br>
-        <input type="radio" name="miles" value="200"> More than 200<br>
+        <label>How many miles do you drive the car?</label><br>
+        <input type="radio" name="miles" value="1"> Less than 50<br>
+        <input type="radio" name="miles" value="2"> 50-100<br>
+        <input type="radio" name="miles" value="5"> 100-200<br>
+        <input type="radio" name="miles" value="10"> More than 200<br>
 
         <h3>Energy Usage at Home</h3>
-        <label>What time of house do you live in</label>
-        <input type="radio" name="house-type" value="apartment"> Apartment<br>
-        <input type="radio" name="house-type" value="townhouse"> Townhouse<br>
-        <input type="radio" name="house-type" value="semi-detached"> Semi-Detached<br>
-        <input type="radio" name="house-type" value="detached"> Detached<br>
-
-        <label>What is your primary source of energy</label>
-        <input type="radio" name="energy-type" value="apartment"> Apartment<br>
-        <input type="radio" name="energy-type" value="townhouse"> Townhouse<br>
-        <input type="radio" name="energy-type" value="semi-detached"> Semi-Detached<br>
-        <input type="radio" name="energy-type" value="detached"> Detached<br>
+        <label>What time of house do you live in?</label><br>
+        <input type="radio" name="house-type" value="2"> Apartment<br>
+        <input type="radio" name="house-type" value="4"> Townhouse<br>
+        <input type="radio" name="house-type" value="7"> Semi-Detached<br>
+        <input type="radio" name="house-type" value="10"> Detached<br>
         
-        <h3>What is your diet</h3>
-        <label>What is your diet primarliy</label>
-        <input type="radio" name="food" value="Vegan"> Apartment<br>
-        <input type="radio" name="food" value="Vegatarion"> Semi-Detached<br>
-        <input type="radio" name="food" value="Omnivore"> Detached<br>
+        <h3>What is your diet?</h3>
+        <label>What is your diet primarliy?</label><br>
+        <input type="radio" name="food" value="1"> Vegan<br>
+        <input type="radio" name="food" value="4"> Vegetarion<br>
+        <input type="radio" name="food" value="7"> Omnivore<br>
 
         <h3>Waste and Consumption</h3>
-        <label>How often do you remember to sort your trash properly</label>
-        <input type="radio" name="garbage" value="always"> Always<br>
-        <input type="radio" name="garbage" value="mostly"> Mostly<br>
-        <input type="radio" name="garbage" value="sometimes"> Sometimes<br>
-        <input type="radio" name="garbage" value="never"> Never<br>
+        <label>How often do you remember to sort your trash properly?</label><br>
+        <input type="radio" name="garbage" value="1"> Always<br>
+        <input type="radio" name="garbage" value="3"> Mostly<br>
+        <input type="radio" name="garbage" value="5"> Sometimes<br>
+        <input type="radio" name="garbage" value="10"> Never<br>
 
         <h3>Travel</h3>
-        <label>How often do you travel by airplane</label>
-        
+        <label>How often do you travel by airplane?</label><br>
+        <input type="radio" name="airplane" value="10"> Several times a Year<br>
+        <input type="radio" name="airplane" value="7"> Once a year<br>
+        <input type="radio" name="airplane" value="4"> Once every few years<br>
+        <input type="radio" name="airplane" value="1"> Rarely<br>
 
-        <button type="submit">Submit</button>
-      </form>
-      
+        <button onclick="getScore()">Submit</button>
+
+        <h3>Your Carbon Footprint Score: <span id="score"></span></h3>
+    </div>
 </body>
 </html>
